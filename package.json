@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "prepare": "husky",
     "lint": "eslint src/**"
   },
   "keywords": [],
