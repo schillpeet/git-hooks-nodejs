@@ -1,3 +1,3 @@
-const mult = (a, b) => a * b;
+const mult = (a, c) => a * c;
 
 module.exports = mult;
