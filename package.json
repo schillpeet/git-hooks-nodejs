@@ -7,7 +7,8 @@
     "test": "jest",
     "lint": "eslint src/**",
     "lint-fix": "eslint src/** --fix",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "success-message": "echo Thanks for committing $GIT_AUTHOR_NAME"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,11 @@
     "husky": "^9.0.11",
     "jest": "^29.7.0",
     "lint-staged": "^15.2.2"
+  },
+  "husky": {
+    "hooks": {
+      "post-commit": "npm run success-message"
+    }
   },
   "lint-staged": {
     "*.js": [
